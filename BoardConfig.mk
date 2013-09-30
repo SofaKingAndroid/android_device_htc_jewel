@@ -79,6 +79,10 @@ BOARD_VOLD_MAX_PARTITIONS := 38
 # Recovery
 TARGET_RECOVERY_FSTAB := device/htc/jewel/rootdir/etc/fstab.qcom
 
+# Flags for Krait CPU / tune for cortex-a9
+COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
+TARGET_EXTRA_CFLAGS := -mcpu=cortex-a9 -mtune=cortex-a15
+
 # TWRP
 DEVICE_RESOLUTION := 720x1280
 TW_FLASH_FROM_STORAGE := true
