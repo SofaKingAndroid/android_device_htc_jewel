@@ -53,3 +53,6 @@ persist.timed.enable=true
 
 # UMS
 persist.sys.usb.config=mass_storage,adb
+
+# HW_Keys
+qemu.hw.mainkeys=1
